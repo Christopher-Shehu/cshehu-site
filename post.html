@@ -1,0 +1,19 @@
+---
+layout: base
+---
+<article>
+  <header class="post-head">
+    <p class="label">blog</p>
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      {{ page.date | date: "%B %-d, %Y" }} · {{ content | number_of_words | divided_by: 200 | plus: 1 }} min read{% if page.tags.size > 0 %} · {% for t in page.tags %}<span class="tag">#{{ t }}</span> {% endfor %}{% endif %}
+    </div>
+  </header>
+  <div class="prose">
+{{ content }}
+  </div>
+  <div class="post-foot">
+    <a href="/blog/">← all posts</a>
+    <a href="https://www.linkedin.com/in/christopher-shehu/" target="_blank" rel="noopener">discuss on LinkedIn ↗</a>
+  </div>
+</article>

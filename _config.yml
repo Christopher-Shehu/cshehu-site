@@ -1,0 +1,17 @@
+title: Christopher Shehu
+description: Senior Data Engineer building governed, AI-ready lakehouse platforms on Databricks and Azure.
+url: https://cshehu.com
+author: Christopher Shehu
+lang: en
+timezone: America/New_York
+permalink: /blog/:title/
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+feed:
+  path: feed.xml
+exclude:
+  - README.md
+  - HOW-TO-POST.md
